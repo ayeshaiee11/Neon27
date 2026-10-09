@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NEON27</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="A cyberpunk arcade runner. Outrun the Sentinel AI. Trigger NEON OVERDRIVE.">
+  <meta name="theme-color" content="#05020d">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="stage" data-s="title"><canvas id="cv"></canvas>
+<div id="hb"><button id="bm">🔊</button><button id="bp">❚❚</button></div>
+<div id="title" class="scr">
+<div id="acct"><span id="who">◉ GUEST</span><button id="blogin">LOGIN</button><button id="blogout" class="hid">LOGOUT</button><button id="bboard">LEADERBOARD</button><button id="bbadge">BADGES</button></div><h1 class="glt" data-t="NEON27">NEON27</h1><h2 class="glt" data-t="AFTER DARK">AFTER DARK</h2>
+<div class="tag">THE CITY NEVER SLEEPS · SENTINEL NEVER BLINKS</div>
+<button class="b big" id="go">JACK IN</button><div id="skins"></div>
+<div class="row"><span>VOLUME</span><input id="vol" type="range" min="0" max="100" value="70"><span id="best"></span></div>
+<div class="help"><b>SPACE/W</b> JUMP (x2) · <b>S/↓</b> SLIDE · <b>SHIFT/X</b> DASH · <b>E</b> OVERDRIVE · <b>P</b> PAUSE · <b>M</b> MUTE</div></div>
+<div id="auth" class="scr hid"><h2 class="glt" data-t="RUNNER ID">RUNNER ID</h2><div class="tag" id="atag">LOG IN TO SAVE RUNS &amp; EARN BADGES</div>
+<input id="au" placeholder="USERNAME" maxlength="16" autocomplete="username"><input id="ap" type="password" placeholder="PASSWORD (8+ CHARS)" autocomplete="current-password"><div id="ae"></div>
+<div><button class="b" id="asub">LOGIN</button><button class="b" id="asw">NEW RUNNER</button><button class="b back">BACK</button></div></div>
+<div id="board" class="scr hid"><h2 class="glt" data-t="TOP RUNNERS">TOP RUNNERS</h2><ol id="bl"></ol><button class="b back">BACK</button></div>
+<div id="bdg" class="scr hid"><h2 class="glt" data-t="BADGES">BADGES</h2><div id="bg"></div><button class="b back">BACK</button></div>
+<div id="load" class="scr hid"><div id="lt"></div><div id="lb"><i></i></div></div>
+<div id="pause" class="scr hid"><h2 class="glt" data-t="PAUSED">PAUSED</h2><br><button class="b" id="rs">RESUME</button><button class="b" id="pm">MENU</button><button class="b lo hid">LOGOUT</button></div>
+<div id="end" class="scr hid"><h2 class="glt" id="et" data-t=""></h2><div id="es"></div><div id="ea"></div><div><button class="b big" id="br">RETRY</button><button class="b" id="bmn">MENU</button><button class="b lo hid">LOGOUT</button></div></div>
+<div id="touch"><button data-a="slide" style="left:14px">SLIDE</button><button data-a="dash" style="left:108px">DASH</button><button data-a="od" style="right:122px">OVERDRIVE</button><button data-a="jump" style="right:14px;width:100px;height:100px">JUMP</button></div>
+</div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
